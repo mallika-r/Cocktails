@@ -3,13 +3,12 @@ import { Cocktail } from 'src/app/core/cocktail.model';
 import { CocktailService } from 'src/app/core/cocktail.service';
 import * as dt from '../../../assets/data.json'
 import { ActivatedRoute, Router } from "@angular/router";
-import { Location } from '@angular/common'
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
-  styleUrls: ['./details.component.scss'],
-  providers:[CocktailService]
+  styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
   

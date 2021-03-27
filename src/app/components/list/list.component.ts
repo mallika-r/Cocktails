@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Cocktail } from 'src/app/core/Cocktail.model';
-import { CocktailService } from "src/app/core/Cocktail.service";
+import { Cocktail } from 'src/app/core/cocktail.model';
+import { CocktailService } from "src/app/core/cocktail.service";
 
 
 @Component({
@@ -11,8 +11,8 @@ import { CocktailService } from "src/app/core/Cocktail.service";
 export class ListComponent implements OnInit {
   list: Cocktail[] = [];
   srchList: Cocktail[] = [];
-  constructor(private readonly CocktailService: CocktailService) {
-    CocktailService.getCocktails()
+  constructor(private readonly cocktailService: CocktailService) {
+    cocktailService.getCocktails()
       .subscribe((data: any) => {
         console.log(data);
         this.list = data.drinks.sort((a, b) => (a.strAlcoholic > b.strAlcoholic) ? 1 : -1);
