@@ -1,0 +1,19 @@
+[
+{    
+"idDrink": "17222",
+"strAlcoholic": "Alcoholic",
+"strCategory": "Cocktail",
+"strCreativeCommonsConfirmed": "No",
+"strDrink": "A1",
+"strDrinkAlternate": null,
+"strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg",
+"strGlass": "Cocktail glass",
+"strIBA": null,
+"strImageAttribution": null,
+"strImageSource": null,
+"strIngredient1": "Gin",
+"strIngredient2": "Grand Marnier",
+"strIngredient3": "Lemon Juice",
+"strIngredient4": "Grenadine"
+}
+]

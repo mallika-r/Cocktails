@@ -1,0 +1,40 @@
+<div class="container layout">
+    <div class="row">
+        
+        <br/>
+        <br/>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="Btn" (click)="onBack()">Back</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <br/>
+        <br/>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-6">
+            <img style="height: 300px;width: auto;" src="{{cocktail.strDrinkThumb}}" 
+            alt=""
+            />
+        </div>
+        <div class="col-sm-6 noPadding">            
+                <div class="container noPadding" >
+                    <div class="row noPadding">
+                        <div class="col-sm-3">
+                            <div class="container">
+                                <div class="row"><b>Name:</b> {{cocktail.strDrink}} </div>
+                                <div class="row"><b>Category: </b>{{cocktail.Category}}</div>
+                                <div class="row"><b>Ingredient1:</b> {{cocktail.strIngredient1}}</div>
+                                <div class="row"><b>Ingredient2:</b> {{cocktail.strIngredient2}}</div>
+                                <div class="row"><b>Ingredient3:</b> {{cocktail.strIngredient3}}</div>
+                            </div>
+                        </div>                        
+                    </div>                                  
+                </div>
+            </div>             
+    </div>
+</div>

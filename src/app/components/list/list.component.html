@@ -1,0 +1,34 @@
+<div class="container layout">
+  <div class="row">
+    <div class="col-sm-7">
+      <input class="srch" type="text" (keyup)="searchCocktail($event)"
+       placeholder="Search for the cocktail...">
+    </div>
+
+    <div class="col-sm-5">
+      <select (change)="change($event)" class="form-control srch">
+        <option>Name</option>
+        <option>Category</option>
+        <option>Ingredient</option>
+      
+    </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div *ngFor="let cocktail of srchList" class="col-sm-3 crdLyt">
+      <div class="card">
+        <a routerLink="/cocktail/details/{{cocktail.idDrink}}"><img class="card-img-top"
+         src="{{cocktail.strDrinkThumb}}" style="height:150px;display:inline-block;
+      min-width:100%;max-width:100%;width: auto;" alt="Card image cap"></a>
+        <div class="card-body">
+          <h5 class="card-title" ><b>Name: </b>{{cocktail.strDrink}}</h5>          
+         <p  class="card-text" ><b>Category:</b> {{cocktail.strCategory}}</p>
+         <p  class="card-text" ><b>Ingredient:</b> {{cocktail.strIngredient1}}</p>         
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
